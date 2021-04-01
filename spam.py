@@ -27,7 +27,7 @@ _LÜTFEN GRUBUNUZA EKLEDİKTEN VE YETKİ VERDİKTEN SONRA GRUP
 @bot.message_handler(commands=["spam"])
 def menu(message):
     markup = InlineKeyboardMarkup(row_width=2)
-    bilgi = InlineKeyboardButton("️Bilgilendirme 💬", url="https://t.me/Codlar/2")
+    bilgi = InlineKeyboardButton("️Bilgilendirme 💬", url="https://t.me/Saygisizlar")
     markup.add(bilgi)
     
     bot.send_message(message.chat.id, """
