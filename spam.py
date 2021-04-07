@@ -3,13 +3,13 @@ import telebot
 from telebot import types
 from telebot.types import InlineKeyboardMarkup, InlineKeyboardButton
 
-bot = telebot.TeleBot("token", skip_pending=True)
+bot = telebot.TeleBot("", skip_pending=True)
 
 @bot.message_handler(commands=["start"])
 def menu(message):
     markup = InlineKeyboardMarkup(row_width=2)
-    kanal = InlineKeyboardButton("📣 Kanalımız", url="https://t.me/WixstraGod")
-    koruma = InlineKeyboardButton("Korumaya Al 🛡️", url="https://t.me/SpamProtectronOfficalBot?startgroup=a")
+    kanal = InlineKeyboardButton("📣 Kanalımız", url="https://t.me/WixströfkdmraGod")
+    koruma = InlineKeyboardButton("Korumaya Al 🛡️", url="https://t.me/kdhsnfkdbot?startgroup=a")
     markup.add(kanal,koruma)
     bot.send_message(message.chat.id, """
 *Spam Protector*
