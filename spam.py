@@ -3,7 +3,7 @@ import telebot
 from telebot import types
 from telebot.types import InlineKeyboardMarkup, InlineKeyboardButton
 
-bot = telebot.TeleBot("1707725155:AAFlBHfOewBPnR_3rVJTB1H4mTWfKVy_DEE", skip_pending=True)
+bot = telebot.TeleBot("token", skip_pending=True)
 
 @bot.message_handler(commands=["start"])
 def menu(message):
